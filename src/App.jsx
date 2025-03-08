@@ -1,5 +1,4 @@
 import React from 'react'
-import Home from './pages/Home/Home'
 import Layout from './Layout'
 import { HashRouter  as Router, Route, Routes } from 'react-router-dom'
 
