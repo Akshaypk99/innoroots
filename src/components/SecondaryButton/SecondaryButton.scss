@@ -1,0 +1,73 @@
+.secondary-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  gap: 0.6rem;
+  margin-top: 1.25rem; // Default margin-top for smaller screens
+  width: fit-content;
+  @media (min-width: 992px) {
+    margin-top: 1rem; // lg:mt-8 equivalent
+  }
+
+  .primary-btn {
+    position: relative;
+    // text-transform: uppercase;
+    font-size: 1.15rem; // text-sm
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #FFFBF0;
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    border: none;
+    z-index: 10;
+  }
+
+  .bg-effect {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 9999px;
+    transition: all 0.5s ease-out;
+  }
+  
+
+  &:hover .bg-effect {
+    width: calc(100% - 3.7rem);
+  }
+
+  .arrow-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #FFFBF0;
+    border: 4px solid var(--secondary-color);
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out 0.3s;
+    z-index: 20;
+    &:hover {
+      border-color: #FFFBF0;
+      transition-delay: 0s;
+    }
+
+    img {
+      width: 16px;
+
+      @media (min-width: 768px) {
+        width: 24px;
+      }
+    }
+  }
+  &:hover{
+    .arrow-icon {
+      border-color: #FFFBF0;
+    }
+  }
+}
+
+  

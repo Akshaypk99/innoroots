@@ -1,0 +1,312 @@
+.home-page{
+    background-color: var(--tertiary-color);
+    
+    .sec-2{
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        background: var(--primary-color);
+        background-color: var(--tertiary-color);
+        border-radius: 30px 30px 0 0;
+        position: relative;
+        top: -30px;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    // .sec-3{}
+    .sec-4{
+        margin: 8rem 0;
+        .mile-stones{
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 10px;
+            border-top: 2px solid var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            gap: 20px;
+            .item{
+                display: flex;
+                gap: 10px;
+                img{
+                    width: 50px;
+                }
+                .contents{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    font-family: "Inter";
+                    width: max-content;
+                    .count{
+                        font-size: 2rem;
+                        font-weight: 500;
+                        line-height: normal;
+                        opacity: 0;
+                        transform: translateY(10px);
+                        animation: fadeInUp 3s ease-in-out forwards;
+
+                    }
+                    .description{
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        width: max-content;
+                    }
+                }
+            }
+        }
+    }
+    .sec-5{
+        // display: flex;
+        overflow: hidden;
+        // justify-content: center;
+        .main-title{
+            text-align: center;
+            font-family: "Inter";
+            // font-size: calc(36px + 4 * (100vw - 320px) / 1600);
+        }
+        .cross-div{
+            height: 200px;
+            position: relative;
+            margin-top: 70px;
+            margin-bottom: 70px;
+            // overflow: hidden;
+            .grey-div{
+                position: absolute;
+                height: 125px;
+                width: 105%;
+                top: -10%;
+                background-color: #D9D9D9;
+                transform: rotate(1.5deg);
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                }
+            .blue-div{
+                position: absolute;
+                top: 50%;
+                right: -15px;
+                height: 125px;
+                width: 105%;
+                transform: rotate(-2.8deg) translateY(-50%);
+                background-color: var(--primary-color);
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                overflow: hidden;
+            }
+        }
+    }
+    .sec-6{
+        text-align: center;
+        margin: 60px auto;
+        width: 90%;
+        .certificates{
+            background: var(--secondary-color);
+            margin: 0 auto;
+            margin-top: 25px;
+            // height: 200px;
+            padding: 2rem 4rem;
+            border-radius: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            align-items: center;
+            img {
+                max-height: 80px; // Fixed height for consistency
+                width: auto; // Maintain aspect ratio
+                max-width: 100%; // Prevents overflow
+                object-fit: contain; // Ensures images fit within the given height without stretching
+                transition: transform 0.3s ease;
+
+                &:hover {
+                  transform: scale(1.05);
+                }
+              }
+        }
+    }
+}
+@media(max-width:1024px) {
+    .home-page{
+        .sec-4 {
+            .mile-stones{
+                .item .contents{
+                    .description{
+                        font-size: 1rem;
+                    }
+                    .count{
+                        font-size: 1.5rem;
+                    }
+                } 
+            } 
+        }
+        .sec-6{
+            .certificates{
+                justify-content: space-around;
+                gap: 50px;
+                img{
+
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .home-page{
+        .sec-2{
+            border-radius: 0;
+            top: 0;
+        }
+        // .sec-3{}
+        .sec-4{
+            padding: 50px 8%;
+            margin: 0;
+            .mile-stones{
+                display: flex;
+                flex-direction: column;
+                border: none;
+                gap: 30px;
+                align-items: center;
+                justify-content: center;
+                .item{
+                    width: 200px;
+                    gap: 20px;
+                    img{
+                        width: 40px;
+                    }
+                    .contents{
+                        .count{
+                            font-size: calc(20px + 4 * (100vw - 320px) / 1600);
+                        }
+                        .description{
+                            font-size: calc(12px + 4 * (100vw - 320px) / 1600);
+                        }
+                    }
+                }
+            }
+        }
+        .sec-5{
+            overflow-x: hidden;
+            .main-title{
+                padding: 0 8%;
+                // text-align: start;
+                font-size: calc(28px + 4 * (100vw - 320px) / 1600);
+            }
+            .cross-div{
+                height: 80px;
+                position: relative;
+                margin-top: 50px;
+                margin-bottom: 10px;
+                .grey-div{
+                    position: absolute;
+                    height: 70px;
+                    width: 105%;
+                    top: -30%;
+                    background-color: #D9D9D9;
+                    transform: rotate(2deg);
+                }
+                .blue-div{
+                    position: absolute;
+                    top: 0%;
+                    right: -15px;
+                    height: 70px;
+                    width: 105%;
+                    transform: rotate(-2.8deg) ;
+                    background-color: var(--primary-color);
+                }
+            }
+        }
+        .sec-6{
+            margin: 40px auto;
+            .certificates{
+                padding: 4rem 4rem;
+                flex-direction: column;
+                gap: 45px;
+                img{
+                    // max-height: 100% !important;
+                    // max-width: 100% !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .home-page{
+        .sec-6{
+            .certificates{
+                img{
+                  &.img-NASSCOM{
+                    max-width: 140px;
+                  }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px){
+    .home-page{
+        .sec-6{
+            .certificates{
+                img{
+                    max-height: 70px;
+                    &.img-NASSCOM{
+                        max-width: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1400px){
+    .home-page{
+        .sec-4 .mile-stones .item{
+            gap: 15px;
+            img{
+                width: auto;
+            }
+        } 
+        .sec-5{
+            .cross-div{
+                margin-top: 6rem;
+                .grey-div{
+                    position: absolute;
+                    height: 160px;
+                    width: 105%;
+                    top: -16%;
+                    background-color: #D9D9D9;
+                    transform: rotate(1.5deg);
+                }
+                .blue-div{
+                    position: absolute;
+                    top: 55%;
+                    right: -15px;
+                    height: 160px;
+                    width: 105%;
+                    transform: rotate(-2.7deg) translateY(-50%);
+                    background-color: var(--primary-color);
+                }
+            }
+        }
+        .sec-6{
+            .certificates{
+                max-width: 1531px;
+                img{
+                  
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

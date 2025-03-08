@@ -1,0 +1,72 @@
+.course-banner{
+    min-height: 640px;
+    height: auto;
+    // height: calc(100vh + 30px);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color:#0a121d;
+    background-color: var(--primary-color);
+    position: relative;
+    overflow: hidden;
+    // Background image for About Page
+    .image-slider {
+        position: relative;
+        width: 100%;
+        height: auto;
+        img {
+            width: 100%;
+            height: auto;
+            min-height: 640px;
+            transition: opacity 0.5s ease-in-out;
+            object-fit: cover;
+          }
+                
+      .fade-in {
+        opacity: 1;
+      }
+      
+      .fade-out {
+        opacity: 0;
+      }
+      }
+      
+
+    .title{
+        color: #fff;
+        font-family: 'Aquatico', sans-serif;
+        font-size: 3.25rem;
+        line-height: 1.2;
+        text-align: center;
+        z-index: 1;
+    }
+    
+}
+@media(max-width:991px) {
+    .course-banner{
+        min-height: auto;
+        .image-slider{
+            img{
+                min-height: auto;
+            }
+        }
+    }
+}
+@media(max-width:768px) {
+    .course-banner{
+        .title{
+            font-size: 2.5rem;
+            line-height: 1.2;
+            text-align: center;
+            z-index: 1;
+        }
+    }
+}
+@media (min-width: 1400px){
+    .course-banner{
+        .title{
+            font-size: 3.75rem;
+            line-height: 1.3;
+        }
+    }
+  }

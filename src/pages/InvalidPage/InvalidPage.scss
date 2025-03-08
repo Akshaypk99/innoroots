@@ -1,0 +1,11 @@
+.invalid-page{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .not-found{
+        color: #b30000;
+    }
+}

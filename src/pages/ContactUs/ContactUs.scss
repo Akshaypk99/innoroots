@@ -1,0 +1,186 @@
+.contact-us-page{
+    background-color: var(--tertiary-color);
+    background-color: #fff;
+    .sec-2{
+        // background: var(--primary-color);
+        border-radius: 30px 30px 0 0;
+        position: relative;
+        // top: -30px;
+        padding: 40px 10%;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        width: 100%;
+        .contact-form{
+            
+            .main-title{
+                color: #37508A;
+                font-weight: 500;
+                padding-right: 70px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #37508A;
+                width: fit-content;
+                margin-bottom: 60px;
+            }
+            .form-section{
+                display: flex;
+                width: 100%;
+                form{
+                    width: 70%;
+                    border-right: 1px solid #37508a45;
+                    padding-right: 35px;
+                    margin-bottom: 20px;
+                    .row{
+                        width: 100%;
+                    }
+                    .form-group {
+                        position: relative;
+                        margin-bottom: 20px;
+                        // width: 100%;
+                        &.last{
+                            margin-bottom: 0;
+                        }
+                        input, textarea {
+                          width: 100%;
+                          padding: 12px 0 5px 0;
+                          border: none;
+                          border-bottom: 1px solid #37508a61;
+                          border-radius: 0;
+                          font-size: 16px;
+                          outline: none;
+                          transition: border-color 0.3s;
+                          color: #37508A;
+                          &:focus {
+                            border-color: #37508A;
+                          }
+                      
+                          &:focus + label,
+                          &:not(:placeholder-shown) + label {
+                            top: -5px;
+                            font-size: 13px;
+                            color: #37508A;
+                          }
+                        }
+                      
+                        label {
+                          position: absolute;
+                          left: 0;
+                          top: 20%;
+                          transform: translateY(-30%);
+                          font-size: 16px;
+                          color: #37508aa7;
+                          transition: all 0.3s;
+                        //   background: white;
+                          padding: 0 12px;
+                        }
+                        .error{
+                            font-size: 0.8rem;
+                            color: #df1f1f;
+                        }
+                      }
+                }
+            }
+            
+              textarea {
+                resize: none;
+              }  
+              .btn-container{
+                display: flex;
+                width: 70%;
+                padding-right: 35px;
+                position: relative;
+                right: 20px;
+                justify-content: flex-end;
+                &.mobile{
+                    right: 0;
+                    display: none;
+                }
+              }
+
+              .contact-info{
+                width: 30%;
+                padding-left: 35px;
+                color: #37508A;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                .item{
+                    .title{
+                        font-weight: 500;
+                        margin-bottom: 3px;
+                    }
+                    .value{
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    .sec-3{
+        padding: 50px 6%;  
+        .map-container {
+            width: 100%;
+            height: 350px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            .contact-map {
+              width: 100%;
+              height: 100%;
+              border: 0;
+              border-radius: 10px; /* Ensure the iframe follows border-radius */
+            }
+          }
+      }
+}
+@media(max-width:768px) {
+    .contact-us-page{
+        .sec-2{
+            border-radius: 0;
+            top: 0;
+            .contact-form{
+                .form-group{
+                    margin-bottom: 35px;
+                    label{
+                        top: 40%;
+                    }
+                }
+                .form-section{
+                    display: flex;
+                    flex-direction: column;
+                    form{
+                        width: 100%;
+                        padding: 0;
+                        border: none;
+                    }
+                }
+                .row{
+                    width: 100%;
+                    display: block;
+                }
+                .contact-info{
+                    width: 100%;
+                    padding: 0;
+                    margin-top: 30px;
+                }
+                .btn-container{
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-top: 20px;
+                    padding: 0;
+                    width: 100%;
+                    display: none;
+                    &.mobile{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .sec-3{
+            padding-top: 0;  
+            .map-container{
+                height: 550px;
+            }
+        }
+    }
+}

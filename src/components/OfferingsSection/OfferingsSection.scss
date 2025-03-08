@@ -1,0 +1,50 @@
+.offerings-section{
+    width: 93%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 4.5rem;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+    h5{
+        // font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 10px;
+        // letter-spacing: 0.1rem;
+    }
+    p{
+        max-width: 65%;
+        margin: 0 auto;
+        // letter-spacing: 0.07rem;
+    }
+}
+
+@media(max-width:768px) {
+    .offerings-section{
+        width: 90%;
+        margin-bottom: 40px;
+        padding: 30px;
+        .sub-title{
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        p{
+            max-width: 100%;
+        }
+        // h5{
+        //     font-size: calc(30px + 4 * (100vw - 320px) / 1600);
+        // }
+    }
+
+}
+@media(min-width:1400px) {
+    .offerings-section{
+        max-width: 1531px;
+        margin: 0 auto;
+        p{
+            max-width: 890px;
+        }
+    }
+}

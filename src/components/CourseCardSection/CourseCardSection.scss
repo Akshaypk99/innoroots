@@ -1,0 +1,102 @@
+.course-card-container{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 50px 0;
+    flex-wrap: wrap;
+    width: 93%;
+    margin: 0 auto;
+    .course{
+        flex: 1 1 calc(50% - 20px);;
+    }
+    .card{
+        border-radius: 15px;
+        padding: 25px;
+        background: var(--secondary-color);
+        border: none;
+        .title-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0 25px 0;
+            gap: 5px;
+            img{
+                width: 60px;
+                &.mission{
+                    width: 55px;
+                    height: 50px;
+                }
+            }
+            .main-title{
+                font-size: 1.75rem;
+                line-height: 1.2;
+                margin: 0;
+                padding: 0 10px;
+                text-align: center;
+                display: -webkit-box;
+                -webkit-line-clamp: 2; /* Limits text to 2 lines */
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 100%; /* Adjust based on your layout */
+                word-break: break-word; /* Ensures words break properly */
+            }
+        }
+        .img-container{
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            background: #fff;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .course-card-container{
+        display: flex;
+        flex-direction: column;
+        .course{
+            width: 100%;
+        }
+        .card{
+            width: 100%;
+            padding: 15px;
+            .title-section{
+                padding: 15px 0 15px 0;
+                .main-title{
+                    font-size: 1.25rem;
+                    -webkit-line-clamp: 3; /* Limits text to 3 lines */
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1400px){
+    .course-card-container{
+        max-width: 1531px;
+        margin: 0 auto;
+        padding: 50px 0 50px 0;
+        // .course{
+
+        // }
+        .card{
+            .title-section{
+                .main-title{
+                    font-size: 2.25rem;
+                    padding: 0 20px;
+                }
+            }
+            .img-container{
+                height: auto;
+            }
+        }
+    }
+}
