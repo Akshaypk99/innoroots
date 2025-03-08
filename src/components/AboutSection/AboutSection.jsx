@@ -26,14 +26,14 @@ const AboutSection = ({ source }) => {
               background or expertise. We are committed to democratizing access to cutting-edge education
               and resources, empowering learners to tackle real-world challenges and contribute meaningfully
               to society.
-              <br/>
-              <br/>
+              <br />
+              <br />
               Our mission is to bridge the gap between theoretical knowledge and practical applications,
               ensuring that our students not only understand advanced concepts but also excel in
               implementing them. Through hands-on workshops, project-based learning, and mentorship, we
               inspire curiosity and drive innovation.
-              <br/>
-              <br/>
+              <br />
+              <br />
               One of our core objectives is to solve pressing problems in industries like agriculture,
               healthcare, and dairy farming, leveraging the power of robotics and AI. By blending research,
               education, and application, we nurture the next generation of problem solvers, innovators, and
@@ -44,7 +44,9 @@ const AboutSection = ({ source }) => {
           }
         </FadeInView>
         {source === 'home' &&
-          <PrimaryButton text={'Learn More'} onClick={() => navigate('/about-us')} />
+          <div className="btn-container">
+            <PrimaryButton text={'Learn More'} onClick={() => navigate('/about-us')} />
+          </div>
         }
       </div>
       <div className='img-container'>
