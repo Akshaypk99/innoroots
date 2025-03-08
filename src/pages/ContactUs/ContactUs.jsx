@@ -187,7 +187,7 @@ const ContactUs = () => {
       <div className="sec-3">
         <div className="map-container">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.7007709643512!2d76.42880607480811!3d10.985943589175836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7d5a1bd894c5f%3A0xcdfbc13c0900549d!2sInfolks%20Head%20Office!5e0!3m2!1sen!2sin!4v1740573673003!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1204.829459843417!2d76.43973326961736!3d10.989621315834711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDU5JzIyLjYiTiA3NsKwMjYnMjUuNCJF!5e1!3m2!1sen!2sin!4v1741462041047!5m2!1sen!2sin"
             width="100%"
             height="600"
             className="contact-map"
