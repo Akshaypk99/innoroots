@@ -56,7 +56,7 @@ const Footer = () => {
       </ul>
       <div className="right">
         <div className="info">
-          <div className='mb-1'> InnoRoots AI Pvt. Ltd.</div>
+          <div className='mb-1 fw-medium'> InnoRoots AI PVT. LTD.</div>
           <div> Opposite MES Kalladi College,
             <br /> Mannarkkad, Kerala, India, 678583</div>
         </div>
@@ -80,9 +80,16 @@ const Footer = () => {
               <img src={FOOTER_SM_ICONS.sm5} alt="sm-5" />
               <img src={FOOTER_SM_ICONS.xIcon} alt="X" />
               <img src={FOOTER_SM_ICONS.yt} alt="YouTube" />
-              <img src={FOOTER_SM_ICONS.linkedin} alt="LinkedIn" />
-              <img src={FOOTER_SM_ICONS.fb} alt="Facebook" />
-              <img src={FOOTER_SM_ICONS.ig} alt="Instagram" />
+              <a href="https://www.linkedin.com/company/your-company" target="_blank" rel="noopener noreferrer">
+                <img src={FOOTER_SM_ICONS.linkedin} alt="LinkedIn" />
+              </a>
+              <a href='https://www.facebook.com/share/1ABBEvxYsQ/' target="_blank" rel="noopener noreferrer">
+                <img src={FOOTER_SM_ICONS.fb} alt="Facebook" />
+              </a>
+
+              <a href="https://www.instagram.com/innoroots/" target="_blank" rel="noopener noreferrer">
+                <img src={FOOTER_SM_ICONS.ig} alt="Instagram" />
+              </a>
               <img src={FOOTER_SM_ICONS.sm4} alt="sm-4" />
             </div>
             © 2025 All rights reserved

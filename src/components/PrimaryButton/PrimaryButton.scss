@@ -51,7 +51,7 @@
     transition: all 0.3s ease-in-out 0.3s;
     z-index: 20;
     &:hover {
-      border-color: #FFFBF0;
+      border-color: var(--button-bgcolor);
       transition-delay: 0s;
     }
 
@@ -65,7 +65,11 @@
   }
   &:hover{
     .arrow-icon {
-      border-color: #FFFBF0;
+      border-color: var(--button-bgcolor)                                                             ;
+      background-color: var(--button-bgcolor);
+      img{
+        filter: brightness(0) invert(1);
+      }
     }
   }
 }
